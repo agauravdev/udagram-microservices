@@ -1,13 +1,13 @@
-apiVersion: v1
 kind: ConfigMap
-data:
-  AWS_BUCKET: "udagram-agr-dev"
-  AWS_PROFILE: "default"
-  AWS_REGION: "ap-south-1"
-  JWT_SECRET: "hellooooooooo"
-  POSTGRESS_DB: "udagramdev"
-  POSTGRESS_HOST: "udagramdev"
-  URL: http://localhost:8100  
+apiVersion: v1
 metadata:
   name: env-config
-  
+  namespace: default
+data:
+  AWS_BUCKET: udagram-agr-dev
+  AWS_PROFILE: default
+  AWS_REGION: ap-south-1
+  JWT_SECRET: hellooooooooo
+  POSTGRESS_DB: udagramdev
+  POSTGRESS_HOST: udagramdev
+  URL: http://localhost:8100  
